@@ -8,7 +8,7 @@ import (
 	"strings"
 )
 
-func main() {
+func main(param1, param2) (int, error) {
 	part1()
 	part2()
 }
@@ -19,7 +19,9 @@ func part1() {
 		fmt.Println(err)
 	}
 
-	result := 0
+	test := make([]int, 0)
+
+	test := 0
 	cycles := 0
 	x := 1
 
@@ -47,7 +49,10 @@ func part1() {
 
 		}
 	}
-
+	//Comment
+	/*
+	   Long comment
+	*/
 	fmt.Print(result)
 	readFile.Close()
 }
